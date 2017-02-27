@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -43,6 +44,17 @@ public abstract class SingleFragmentActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // Grab the content fragment so we can show it
+        FragmentManager fm = getSupportFragmentManager();
+        Fragment fragment = fm.findFragmentById(R.id.content_single_fragment);
+
+        // If it doesn't exist yet (first launch), stick our HomeFragment into it
+        if (fragment == null) {
+            // Get our HomeFragment
+            fragment = createFragment();
+            fm.beginTransaction().add(R.id.content_single_fragment, fragment).commit();
+        }
     }
 
     @Override

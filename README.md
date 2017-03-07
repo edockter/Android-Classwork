@@ -1,4 +1,10 @@
 # IUPUI CIT30500 - Android Classwork
+### In-class changes 3/6:
+##### Set up GreenDAO Object Relational Management (ORM) system and a SQLite database.  
+##### [Guide for Today's changes](https://docs.google.com/document/d/1OcDwosMioMxkrSkbsAKkRAjqxLRwnP6rhI3vxZ_gYPA/edit?usp=sharing)
+
+<hr/>
+
 ### In-class changes 3/1:
 ##### Today we made the menu work.  Different fragments are loaded when navigation is changed.  We changed the item names on the menus. Talked about icons.
 * We changed SingleFragmentActivity's onNavigationItemSelected() method.  Uses the FragmentManager to change fragments when a menu item is selected.

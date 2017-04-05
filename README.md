@@ -1,4 +1,10 @@
 # IUPUI CIT30500 - Android Classwork
+### In-class changes 4/3:
+##### Started ListenUp podcast app.
+##### 
+
+<hr/>
+
 ### In-class changes 3/6:
 ##### Set up GreenDAO Object Relational Management (ORM) system and a SQLite database.  
 ##### [Guide for Today's changes](https://docs.google.com/document/d/1OcDwosMioMxkrSkbsAKkRAjqxLRwnP6rhI3vxZ_gYPA/edit?usp=sharing)
